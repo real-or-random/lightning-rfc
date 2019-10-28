@@ -153,9 +153,8 @@ Throughout the handshake process, each side maintains these variables:
 The following functions will also be referenced:
 
   * `ECDH(k, rk)`: performs an Elliptic-Curve Diffie-Hellman operation using
-    `k`, which is a valid private key, and `rk`, which is a `secp256k1` public key
-    within the finite field, as defined by the curve parameters
-      * The returned value is the SHA256 of the DER-compressed format of the
+    `k`, which is a valid `secp256k1` private key, and `rk`, which is a valid public key
+  * The returned value is the SHA256 of the DER-compressed format of the
 	    generated point.
 
   * `HKDF(salt,ikm)`: a function defined in `RFC 5869`<sup>[3](#reference-3)</sup>,
